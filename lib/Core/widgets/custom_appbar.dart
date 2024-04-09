@@ -14,7 +14,7 @@ class CustomAppBar extends StatelessWidget {
         elevation: 2,
         child: Transform.translate(
           offset: const Offset(0, 8),
-          child:  Text(
+          child: Text(
             title,
             style: Styles.textStyle30,
             textAlign: TextAlign.center,

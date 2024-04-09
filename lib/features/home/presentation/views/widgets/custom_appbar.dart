@@ -5,28 +5,28 @@ class CustomHomeAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
-          children: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                )),
-            const Spacer(),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.favorite,
-                  color: Colors.white,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.shopping_cart,
-                  color: Colors.white,
-                ))
-          ],
-        );
+    return Row(
+      children: [
+        IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.white,
+            )),
+        const Spacer(),
+        IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.favorite,
+              color: Colors.white,
+            )),
+        IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.shopping_cart,
+              color: Colors.white,
+            ))
+      ],
+    );
   }
 }

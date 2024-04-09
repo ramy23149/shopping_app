@@ -31,8 +31,7 @@ class ProductContaner extends StatelessWidget {
                   Colors.black.withOpacity(0.2),
                   Colors.transparent
                 ])),
-        child: Stack(
-          children: [
+        child: Stack(children: [
           Positioned(
             right: 0,
             child: IconButton(

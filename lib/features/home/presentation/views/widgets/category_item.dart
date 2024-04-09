@@ -8,7 +8,8 @@ class CategoryItem extends StatelessWidget {
   const CategoryItem({
     super.key,
     required this.image,
-    required this.title, required this.aspectRatio,
+    required this.title,
+    required this.aspectRatio,
   });
   final String image, title;
   final double aspectRatio;

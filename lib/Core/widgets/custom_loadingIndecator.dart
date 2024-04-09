@@ -6,8 +6,12 @@ class CustomLoadingIndecator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Center(
-      child: Lottie.asset('assets/animaions/Animation - 1712013217863.json',width: 200, height: 200,),
+    return Center(
+      child: Lottie.asset(
+        'assets/animaions/Animation - 1712013217863.json',
+        width: 200,
+        height: 200,
+      ),
     );
   }
 }

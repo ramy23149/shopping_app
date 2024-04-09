@@ -10,11 +10,10 @@ class DetailesBody extends StatelessWidget {
   final String image, title;
   @override
   Widget build(BuildContext context) {
-    return   CustomScrollView(
+    return CustomScrollView(
       slivers: [
-         SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: Column(
-            
             children: [
               CategoryImage(
                 image: image,
@@ -23,23 +22,26 @@ class DetailesBody extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Row(
-                children: [
-                  Text(
-                    'New Product',
-                    style: Styles.textStyle20.copyWith(color: kBlack),
-                  ),
-                  const Spacer(),
-                  const Text(
-                    'View More',
-                    style: Styles.textStyle14,
-                  ),
-                  const Icon(
-                    Icons.arrow_forward_ios,
-                    size: 14,
-                    color: Colors.grey,
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                child: Row(
+                  children: [
+                    Text(
+                      'New Product',
+                      style: Styles.textStyle20.copyWith(color: kBlack),
+                    ),
+                    const Spacer(),
+                    const Text(
+                      'View More',
+                      style: Styles.textStyle14,
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios,
+                      size: 14,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(
                 height: 15,
@@ -47,13 +49,8 @@ class DetailesBody extends StatelessWidget {
             ],
           ),
         ),
-        const SliverToBoxAdapter(
-          child: ProductListView()
-        )
-        
+        const SliverToBoxAdapter(child: ProductListView())
       ],
-     
     );
   }
 }
-

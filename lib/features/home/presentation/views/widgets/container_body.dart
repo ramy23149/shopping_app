@@ -9,13 +9,12 @@ class ContainerBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return const Column(
       children: [
         CustomHomeAppbar(),
         Spacer(),
         Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

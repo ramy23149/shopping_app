@@ -1,25 +1,14 @@
-// import 'package:dio/dio.dart';
+import 'package:dio/dio.dart';
 
-// class ApiService {
-//   ApiService(this._dio);
+class ApiService {
+  final Dio dio;
 
-//   final Dio _dio;
+  ApiService(this.dio);
 
-//   final _baseUrl = 'https://api.stripe.com//v1/payment_intents';
-//   Future<String> post({required int amount, required String currency}) async {
-//     Response response = await _dio.post('$_baseUrl',
-//         options: Options(
-//           headers: {
-//             'Authorization': 'Bearer ${kSecretkey}',
-//             'Content-Type': 'application/x-www-form-urlencoded',
-//           }
-//         ),
-//         data: {
-//           'amount': amount,
-//           'currency':currency,
-//         }
-//     );
-//     return response.data['client_secret'];
+  final String baseUrl = 'https://fakestoreapi.com/products/category/';
+  Future<dynamic> get({required String endPoint}) async {
+    Response response = await dio.get('$baseUrl$endPoint');
 
-//   }
-// }
+    return response.data;
+  }
+}

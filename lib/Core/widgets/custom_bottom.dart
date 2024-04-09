@@ -9,7 +9,8 @@ class CustomBotton extends StatelessWidget {
       this.backgroundColor,
       this.textColor,
       required this.text,
-      this.onPressed, this.width});
+      this.onPressed,
+      this.width});
 
   final Color? backgroundColor;
   final Color? textColor;
@@ -19,25 +20,20 @@ class CustomBotton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width:width?? MediaQuery.of(context).size.width / 2,
+      width: width ?? MediaQuery.of(context).size.width / 2,
       height: 50,
       child: TextButton(
         style: TextButton.styleFrom(
             shape: RoundedRectangleBorder(
-              side: BorderSide(
-                color: kWhite
-              ),
-                borderRadius:BorderRadius.circular(90),
-                ),
-                
+              side: BorderSide(color: kWhite),
+              borderRadius: BorderRadius.circular(90),
+            ),
             backgroundColor: backgroundColor ?? Colors.white),
         onPressed: onPressed,
         child: Text(
           text,
           style: Styles.textStyle14.copyWith(
-            color: textColor ?? Colors.black,
-          fontWeight: FontWeight.bold
-          ),
+              color: textColor ?? Colors.black, fontWeight: FontWeight.bold),
         ),
       ),
     );

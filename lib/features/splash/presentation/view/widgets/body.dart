@@ -20,8 +20,6 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
   late Animation<double> scaleAnimtoin;
   Animation<Offset>? slideAnimation;
 
-
-
   @override
   void initState() {
     // TODO: implement initState
@@ -121,7 +119,8 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
       },
     );
   }
-    void startSlideAnimation() {
+
+  void startSlideAnimation() {
     slideController = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 1200));
 

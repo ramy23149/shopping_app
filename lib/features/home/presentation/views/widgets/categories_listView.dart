@@ -8,28 +8,29 @@ class CategoriesListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      padding: EdgeInsets.zero,
       shrinkWrap: true,
       scrollDirection: Axis.horizontal,
       children: const [
         CategoryItem(
-            aspectRatio: 2.2/2,
+          aspectRatio: 2.2 / 2,
           image: 'assets/images/bestsell0.jpg',
           title: 'Beauty',
         ),
-       CategoryItem(
-          aspectRatio: 2.2/2,
-        image: 'assets/images/category1.jpg', title: 'Moda'),
-       CategoryItem(
-          aspectRatio: 2.2/2,
+        CategoryItem(
+            aspectRatio: 2.2 / 2,
+            image: 'assets/images/category1.jpg',
+            title: 'Moda'),
+        CategoryItem(
+          aspectRatio: 2.2 / 2,
           image: 'assets/images/category2.jpg',
           title: 'Perfume',
         ),
         CategoryItem(
-            aspectRatio: 2.2/2,
+          aspectRatio: 2.2 / 2,
           image: 'assets/images/category3.jpg',
           title: 'Glass',
         ),
-          
       ],
     );
   }

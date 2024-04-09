@@ -37,6 +37,7 @@ class SplashViewBody extends StatelessWidget {
   }
 
   Future<void> _loadImage(BuildContext context) async {
-    await precacheImage(const AssetImage("assets/images/category4.jpg"), context);
+    await precacheImage(
+        const AssetImage("assets/images/category4.jpg"), context);
   }
 }

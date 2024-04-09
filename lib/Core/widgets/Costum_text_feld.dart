@@ -9,7 +9,8 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     required this.hint,
     required this.icon,
-    this.obscureText, this.hintColor,
+    this.obscureText,
+    this.hintColor,
   });
   final TextEditingController? controller;
   final void Function(String?)? onSaved;
@@ -33,8 +34,8 @@ class CustomTextField extends StatelessWidget {
         decoration: InputDecoration(
             prefixIcon: icon,
             hintText: hint,
-            hintStyle:
-                 TextStyle(color: hintColor??kBlack, fontWeight: FontWeight.bold),
+            hintStyle: TextStyle(
+                color: hintColor ?? kBlack, fontWeight: FontWeight.bold),
             enabledBorder: const UnderlineInputBorder(),
             focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: kBlack))));

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../text_styles/Styles.dart';
 
 class CustomTextButtom extends StatelessWidget {
-  const CustomTextButtom({super.key, required this.text, required this.onPressed});
+  const CustomTextButtom(
+      {super.key, required this.text, required this.onPressed});
   final String text;
   final void Function() onPressed;
   @override

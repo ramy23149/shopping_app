@@ -4,15 +4,15 @@ import '../../../../../Core/text_styles/Styles.dart';
 
 class CategoryImage extends StatelessWidget {
   const CategoryImage({super.key, required this.image, required this.title});
-  final String image,title;
+  final String image, title;
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    precacheImage( AssetImage(image), context);
+    precacheImage(AssetImage(image), context);
     return Container(
       height: size.height / 2.5,
-      decoration:  BoxDecoration(
+      decoration: BoxDecoration(
           image: DecorationImage(
         image: AssetImage(image),
         fit: BoxFit.cover,
@@ -30,7 +30,6 @@ class CategoryImage extends StatelessWidget {
               ]),
         ),
         child: Column(
-          
           children: [
             Row(
               children: [
@@ -61,7 +60,9 @@ class CategoryImage extends StatelessWidget {
                     ))
               ],
             ),
-            const Spacer(flex: 6,),
+            const Spacer(
+              flex: 6,
+            ),
             Center(
               child: Text(
                 title,
@@ -69,7 +70,9 @@ class CategoryImage extends StatelessWidget {
                     .copyWith(color: Colors.white, fontSize: 35),
               ),
             ),
-            const Spacer(flex: 2,)
+            const Spacer(
+              flex: 2,
+            )
           ],
         ),
       ),

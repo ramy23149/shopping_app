@@ -4,7 +4,8 @@ class BorderTextFiald extends StatelessWidget {
   const BorderTextFiald({
     super.key,
     required this.hintText,
-    this.controller,  this.obscure=false,
+    this.controller,
+    this.obscure = false,
   });
   final String? hintText;
   final TextEditingController? controller;

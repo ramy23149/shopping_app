@@ -67,7 +67,7 @@
 //         .collection('users')
 //         .doc(uId)
 //         .collection('curt').doc(id).delete();
-  
+
 //   }
 
 // }

@@ -24,6 +24,7 @@ class _HomeViewBodyState extends State<HomeViewBody>
     super.initState();
     fadeAnimatoin();
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
@@ -40,6 +41,9 @@ class _HomeViewBodyState extends State<HomeViewBody>
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const ImageContaner(),
+            const SizedBox(
+              height: 10,
+            ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
