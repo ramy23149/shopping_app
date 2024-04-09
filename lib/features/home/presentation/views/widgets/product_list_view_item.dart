@@ -17,7 +17,7 @@ class ProductContaner extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           image:  DecorationImage(
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
               image: NetworkImage(
                 productModel.image!,
               ))),
@@ -69,13 +69,18 @@ class ProductContaner extends StatelessWidget {
             bottom: 16,
             left: 9,
             child: Column(
+
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                 Text(
-                  productModel.title!,
-                  style: Styles.textStyle18,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
+                 SizedBox(
+                   width: size.width * .6,
+                   child: Text(
+                    productModel.title!,
+                    style: Styles.textStyle18,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                                   ),
+                 ),
                 Text(
                   '${productModel.price}\$',
                   style: Styles.textStyle30.copyWith(color: kWhite),

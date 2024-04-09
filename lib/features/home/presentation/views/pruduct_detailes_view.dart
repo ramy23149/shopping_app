@@ -16,7 +16,8 @@ class PruductDetailesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => FeatchProductsCubit(
-          HomeRepoImpl(ApiService(Dio())), const ProductModel())..featchProducts(endPoint: title),
+          HomeRepoImpl(ApiService(Dio())), const ProductModel())
+        ..featchProducts(endPoint: title),
       child: SafeArea(
           child: Scaffold(
         body: DetailesBody(
