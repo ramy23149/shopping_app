@@ -15,21 +15,21 @@ class CategoriesListView extends StatelessWidget {
         CategoryItem(
           aspectRatio: 2.2 / 2,
           image: 'assets/images/bestsell0.jpg',
-          title: 'Beauty',
+          title: 'jewelery',
         ),
         CategoryItem(
             aspectRatio: 2.2 / 2,
             image: 'assets/images/category1.jpg',
-            title: 'Moda'),
+            title: 'women\'s clothing'),
         CategoryItem(
           aspectRatio: 2.2 / 2,
           image: 'assets/images/category2.jpg',
-          title: 'Perfume',
+          title: 'electronics',
         ),
         CategoryItem(
           aspectRatio: 2.2 / 2,
           image: 'assets/images/category3.jpg',
-          title: 'Glass',
+          title: 'men\'s clothing',
         ),
       ],
     );

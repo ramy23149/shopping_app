@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../Core/constats.dart';
 import '../../../../../Core/text_styles/Styles.dart';
+import '../../../data/models/product_model/product_model.dart';
 
 class ProductContaner extends StatelessWidget {
-  const ProductContaner({super.key});
-
+  const ProductContaner({super.key, required this.productModel});
+ final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
       height: size.height * .3,
       width: double.infinity,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          image: const DecorationImage(
+          image:  DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage(
-                'assets/images/bestsell2.jpg',
+              image: NetworkImage(
+                productModel.image!,
               ))),
       child: Container(
         decoration: BoxDecoration(
@@ -69,12 +70,14 @@ class ProductContaner extends StatelessWidget {
             left: 9,
             child: Column(
               children: [
-                const Text(
-                  'Beauty',
+                 Text(
+                  productModel.title!,
                   style: Styles.textStyle18,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
                 Text(
-                  '100\$',
+                  '${productModel.price}\$',
                   style: Styles.textStyle30.copyWith(color: kWhite),
                 )
               ],
